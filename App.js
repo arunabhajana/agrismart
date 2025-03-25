@@ -5,6 +5,10 @@ import OnboardingScreen from "./components/OnboardingScreen";
 import RoleSelectionScreen from "./components/RoleSelectionScreen";
 import RegistrationScreen from "./components/RegistrationScreen";
 import LoginScreen from "./components/LoginScreen";
+import FarmerDashboard from "./components/FarmerDashboard";
+import FarmScreen from "./components/FarmScreen"; 
+import OrderScreen from "./components/OrderScreen"; 
+import MoreScreen from "./components/MoreScreen"; 
 
 const Stack = createStackNavigator();
 
@@ -22,14 +26,17 @@ export default function App() {
         <Stack.Screen name="Onboarding" component={OnboardingScreen} />
         <Stack.Screen name="RoleSelection" component={RoleSelectionScreen} />
         <Stack.Screen name="Registration" component={RegistrationScreen} />
-        <Stack.Screen
-          name="Login"
-          component={LoginScreen}
+        <Stack.Screen name="Login" 
+          component={LoginScreen} 
           options={{
             animation: "fade",
             cardStyleInterpolator: CardStyleInterpolators.forFadeFromBottomAndroid,
           }}
         />
+        <Stack.Screen name="FarmerDashboard" component={FarmerDashboard} />
+        <Stack.Screen name="FarmScreen" component={FarmScreen} />
+        <Stack.Screen name="OrderScreen" component={OrderScreen} />
+        <Stack.Screen name="MoreScreen" component={MoreScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

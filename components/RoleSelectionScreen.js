@@ -15,25 +15,25 @@ const RoleSelectionScreen = ({ navigation }) => {
             </View>
             <View style={styles.rolesContainer}>
                 <TouchableOpacity
-                    style={[styles.roleBox, selectedRole === "Farmer" && styles.selectedRole]}
-                    onPress={() => setSelectedRole("Farmer")}
+                    style={[styles.roleBox, selectedRole === "farmer" && styles.selectedRole]}
+                    onPress={() => setSelectedRole("farmer")}
                 >
                     <Ionicons
                         name="leaf-outline"
                         size={50}
-                        color={selectedRole === "Farmer" ? "rgb(20, 68, 36)" : "#7a7a7a"}
+                        color={selectedRole === "farmer" ? "rgb(20, 68, 36)" : "#7a7a7a"}
                     />
                     <Text style={styles.roleText}>Farmer</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity
-                    style={[styles.roleBox, selectedRole === "Buyer" && styles.selectedRole]}
-                    onPress={() => setSelectedRole("Buyer")}
+                    style={[styles.roleBox, selectedRole === "buyer" && styles.selectedRole]}
+                    onPress={() => setSelectedRole("buyer")}
                 >
                     <Ionicons
                         name="cart-outline"
                         size={50}
-                        color={selectedRole === "Buyer" ? "rgb(20, 68, 36)" : "#7a7a7a"}
+                        color={selectedRole === "buyer" ? "rgb(20, 68, 36)" : "#7a7a7a"}
                     />
                     <Text style={styles.roleText}>Buyer</Text>
                 </TouchableOpacity>
